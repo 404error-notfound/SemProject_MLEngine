@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FakeNewsDetector</string>
+    <string name="share_label">Check for misinformation</string>
+</resources>
