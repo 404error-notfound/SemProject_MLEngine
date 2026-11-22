@@ -7,7 +7,8 @@ import com.example.fakenewsdetector.data.AppDatabase
 import com.example.fakenewsdetector.data.CheckRepository
 import com.example.fakenewsdetector.ml.Classification
 import com.example.fakenewsdetector.ml.Classifier
-import com.example.fakenewsdetector.ml.MockClassifier
+import com.example.fakenewsdetector.ml.ApiClassifier
+import com.example.fakenewsdetector.ml.ClassifierApiFactory
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -23,7 +24,7 @@ sealed interface CheckUiState {
 class CheckViewModel(app: Application) : AndroidViewModel(app) {
 
     // Swap this line for TfliteClassifier(app) once the real model is ready.
-    private val classifier: Classifier = MockClassifier()
+    private val classifier: Classifier = ApiClassifier(ClassifierApiFactory.create())
 
     private val repository = CheckRepository(AppDatabase.get(app).checkDao())
 
