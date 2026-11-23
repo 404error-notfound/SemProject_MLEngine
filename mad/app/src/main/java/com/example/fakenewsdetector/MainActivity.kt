@@ -179,6 +179,7 @@ private fun AppRoot(
 
     when (val current = route) {
         is MainRoute.Result -> {
+            val shareTitle = stringResource(R.string.share_chooser_title)
             ResultScreen(
                 result = current.result,
                 onBack = { route = current.origin },
@@ -186,7 +187,7 @@ private fun AppRoot(
                     sharePlainText(
                         context,
                         container.correctionFactory.build(current.result),
-                        context.getString(R.string.share_chooser_title)
+                        shareTitle
                     )
                 },
                 onSecondaryAction = {
