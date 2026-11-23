@@ -6,22 +6,48 @@ import androidx.activity.ComponentActivity
 
 /**
  * Invisible entry point for the Android share sheet.
- * It grabs the shared text, hands it to MainActivity, and closes itself.
+ * It grabs the shared text, resolves which app it came from, and opens the
+ * quick-check sheet over that app.
  */
 class ShareReceiverActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val text = if (intent?.action == Intent.ACTION_SEND && intent.type == "text/plain") {
-            intent.getStringExtra(Intent.EXTRA_TEXT)
-        } else null
+        val text = if (intent?.action == Intent.ACTION_SEND) {
+            intent.getCharSequenceExtra(Intent.EXTRA_TEXT)?.toString()
+        } else {
+            null
+        }
 
-        val open = Intent(this, MainActivity::class.java).apply {
-            putExtra(MainActivity.EXTRA_SHARED_TEXT, text)
-            addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP or Intent.FLAG_ACTIVITY_CLEAR_TOP)
+        if (text.isNullOrBlank()) {
+            finish()
+            return
+        }
+
+        val open = Intent(this, QuickCheckActivity::class.java).apply {
+            putExtra(EXTRA_SHARED_TEXT, text)
+            putExtra(EXTRA_SOURCE_APP, resolveSourceLabel())
         }
         startActivity(open)
         finish()
+    }
+
+    /** Best-effort label of the app the share came from ("WhatsApp"). */
+    private fun resolveSourceLabel(): String? {
+        // Share-sheet referrers look like android-app://com.whatsapp.
+        val referrerPackage = referrer
+            ?.takeIf { it.scheme == "android-app" }
+            ?.host
+            ?: return null
+        return runCatching {
+            val info = packageManager.getApplicationInfo(referrerPackage, 0)
+            packageManager.getApplicationLabel(info).toString()
+        }.getOrNull()
+    }
+
+    companion object {
+        const val EXTRA_SHARED_TEXT = "shared_text"
+        const val EXTRA_SOURCE_APP = "source_app"
     }
 }

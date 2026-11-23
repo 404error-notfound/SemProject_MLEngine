@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
+        android:name=".FakeNewsApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -28,6 +29,8 @@
             android:name=".ShareReceiverActivity"
             android:exported="true"
             android:label="@string/share_label"
+            android:noHistory="true"
+            android:excludeFromRecents="true"
             android:theme="@android:style/Theme.Translucent.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
@@ -35,6 +38,14 @@
                 <data android:mimeType="text/plain" />
             </intent-filter>
         </activity>
+
+        <!-- Quick check sheet shown over the app the post was shared from. -->
+        <activity
+            android:name=".QuickCheckActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:label="@string/share_label"
+            android:theme="@style/Theme.FakeNewsDetector.QuickCheck" />
 
     </application>
 </manifest>
