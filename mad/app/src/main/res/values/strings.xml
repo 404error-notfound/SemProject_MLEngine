@@ -1,4 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">FakeNewsDetector</string>
     <string name="share_label">Check for misinformation</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_check">Check</string>
+    <string name="nav_history">History</string>
+
+    <!-- Check screen -->
+    <string name="check_title">Check a post</string>
+    <string name="check_helper">Paste a claim, or share it to this app from WhatsApp, X or Telegram.</string>
+    <string name="post_text_label">Post text</string>
+    <string name="post_text_placeholder">Post text (English, Swahili or Sheng)</string>
+    <string name="paste_from_clipboard">Paste from clipboard</string>
+    <string name="paste_suggestion">Paste copied text?</string>
+    <string name="clipboard_empty">Nothing to paste yet. Copy a message first.</string>
+    <string name="share_chooser_title">Share with</string>
+    <string name="char_counter">%1$d / %2$d</string>
+    <string name="action_check">Check</string>
+    <string name="action_clear">Clear</string>
+    <string name="skip_title">Skip the copy and paste</string>
+    <string name="skip_body">In WhatsApp, X or Telegram, tap Share on a message and pick this app. You get a quick answer without leaving the chat.</string>
+    <string name="icon_share_desc">Share</string>
+    <string name="language_detected">%1$s detected</string>
+    <string name="language_english">English</string>
+    <string name="language_swahili">Swahili</string>
+    <string name="language_sheng">Sheng</string>
+    <string name="language_mixed">Mixed</string>
+    <string name="language_unknown">Unknown</string>
+
+    <!-- Checking state -->
+    <string name="checking_title">Checking…</string>
+    <string name="checking_helper">This usually takes a few seconds.</string>
+    <string name="your_post_language">Your post · %1$s</string>
+    <string name="step_read_post">Reading the post</string>
+    <string name="step_spot_claim">Spotting the claim</string>
+    <string name="step_search_sources">Searching trusted sources</string>
+    <string name="step_compare">Comparing what we found</string>
+    <string name="step_write_result">Writing your result</string>
+    <string name="action_cancel">Cancel</string>
+
+    <!-- Result screen -->
+    <string name="result_title">Result</string>
+    <string name="verdict_eyebrow">VERDICT</string>
+    <string name="verdict_likely_false">Likely false</string>
+    <string name="verdict_unverified">Unverified</string>
+    <string name="verdict_likely_true">Likely true</string>
+    <string name="confidence_high">High confidence</string>
+    <string name="confidence_medium">Medium confidence</string>
+    <string name="confidence_low">Low confidence</string>
+    <string name="confidence_meter_desc">Confidence %1$d out of 5</string>
+    <string name="post_checked_label">The post you checked · %1$s</string>
+    <string name="why_we_think_so">Why we think so</string>
+    <string name="what_we_found">What we found</string>
+    <string name="what_you_can_do">What you can do</string>
+    <string name="related_fact_checks">Related fact-checks</string>
+    <string name="action_share_correction">Share a correction</string>
+    <string name="action_share_caution">Share a caution</string>
+    <string name="action_check_another">Check another</string>
+    <string name="icon_back_desc">Back</string>
+    <string name="icon_open_source_desc">Open fact-check</string>
+    <string name="icon_expand_post">Show the full post</string>
+    <string name="icon_collapse_post">Collapse the post</string>
+    <string name="result_disclaimer">This is an automated estimate, not a fact-check. Verify with a trusted source.</string>
+    <string name="action_do_1">Look for the same news on the official channel of the body it names.</string>
+    <string name="action_do_2">Ask the sender where they got it from.</string>
+    <string name="action_do_3">Check again later. We\'ll find more as news breaks.</string>
+
+    <!-- History -->
+    <string name="history_title">History</string>
+    <string name="history_empty">No checks yet. Posts you check will appear here.</string>
+    <string name="filter_all">All</string>
+    <string name="filter_likely_false">Likely false</string>
+    <string name="filter_unverified">Unverified</string>
+    <string name="filter_likely_true">Likely true</string>
+    <string name="group_today">Today</string>
+    <string name="group_yesterday">Yesterday</string>
+    <string name="group_earlier">Earlier</string>
+    <string name="relative_yesterday">Yesterday</string>
+    <string name="action_delete">Delete</string>
+    <string name="check_deleted">Check deleted</string>
+    <string name="action_undo">Undo</string>
+    <string name="icon_clear_history_desc">Clear history</string>
+    <string name="icon_open_check_desc">Open check</string>
+    <string name="action_recheck">Check again</string>
+    <string name="clear_history_title">Clear history?</string>
+    <string name="clear_history_message">This removes all saved checks and can\'t be undone.</string>
+    <string name="action_clear_history">Clear history</string>
+
+    <!-- Errors -->
+    <string name="error_offline_title">You\'re offline</string>
+    <string name="error_offline_body">Connect to the internet and try again.</string>
+    <string name="error_timeout_title">This is taking too long</string>
+    <string name="error_timeout_body">The check took more than %1$d seconds. Try again.</string>
+    <string name="error_server_title">Something went wrong</string>
+    <string name="error_server_body">The check didn\'t come back complete. Please try again.</string>
+    <string name="error_empty_text">Paste or type a post first.</string>
+    <string name="error_too_long_title">That post is too long</string>
+    <string name="error_too_long_body">Keep it under %1$d characters and try again.</string>
+    <string name="action_retry">Retry</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="icon_settings_desc">Settings</string>
+    <string name="settings_theme">Theme</string>
+    <string name="theme_system">System</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="settings_language">App language</string>
+    <string name="option_english">English</string>
+    <string name="option_kiswahili">Kiswahili</string>
+    <string name="settings_clear_history">Clear history</string>
+    <string name="settings_privacy">Privacy</string>
+    <string name="settings_privacy_note">Posts you check are sent to our server for analysis.</string>
+    <string name="settings_about">About</string>
+    <string name="settings_version">Version %1$s</string>
+    <string name="about_dialog_title">About this app</string>
+    <string name="about_dialog_body">Fake News Detector gives you a quick, automated estimate for a forwarded message in English, Swahili or Sheng. It is not a replacement for professional fact-checkers.</string>
+    <string name="action_close">Close</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title">Check before you share</string>
+    <string name="onboarding_body">Send us a forwarded message and get a plain-language verdict in seconds.</string>
+    <string name="onboarding_point_share">Tap Share in WhatsApp, X or Telegram and pick this app to get an answer without leaving the chat.</string>
+    <string name="onboarding_point_history">Every check is saved so you can look it up again later.</string>
+    <string name="onboarding_point_language">Works with English, Swahili and Sheng.</string>
+    <string name="action_skip">Skip</string>
+    <string name="action_get_started">Get started</string>
+
+    <!-- Quick check sheet -->
+    <string name="share_from_source">Shared from %1$s</string>
+    <string name="share_from_unknown">Shared from another app</string>
+    <string name="action_see_full_result">See full result</string>
+    <string name="action_dismiss">Dismiss</string>
+    <string name="result_not_found">That check is no longer saved.</string>
+
+    <!-- Correction message (share sheet) -->
+    <string name="correction_verdict_false">This message is likely false</string>
+    <string name="correction_verdict_unverified">Please don\'t share this yet — I couldn\'t verify it</string>
+    <string name="correction_verdict_true">This message appears to be accurate</string>
+    <string name="correction_message">%1$s. %2$s</string>
 </resources>

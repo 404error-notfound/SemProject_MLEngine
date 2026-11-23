@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Swahili translations. Every string that has not been reviewed by a native
+    speaker is marked TODO(review-sw) so the team can verify it before release.
+-->
+<resources>
+    <string name="share_label">Angalia taarifa za uongo</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_check">Angalia</string> <!-- TODO(review-sw) -->
+    <string name="nav_history">Historia</string> <!-- TODO(review-sw) -->
+
+    <!-- Check screen -->
+    <string name="check_title">Angalia chapisho</string> <!-- TODO(review-sw) -->
+    <string name="check_helper">Bandika dai, au litumie programu hii kutoka WhatsApp, X au Telegram.</string> <!-- TODO(review-sw) -->
+    <string name="post_text_label">Maandishi ya chapisho</string> <!-- TODO(review-sw) -->
+    <string name="post_text_placeholder">Maandishi ya chapisho (Kiingereza, Kiswahili au Sheng)</string> <!-- TODO(review-sw) -->
+    <string name="paste_from_clipboard">Bandika kutoka ubao wa kunakili</string> <!-- TODO(review-sw) -->
+    <string name="paste_suggestion">Bandika maandishi uliyonakili?</string> <!-- TODO(review-sw) -->
+    <string name="clipboard_empty">Hakuna cha kubandika bado. Nakili ujumbe kwanza.</string> <!-- TODO(review-sw) -->
+    <string name="share_chooser_title">Shiriki na</string> <!-- TODO(review-sw) -->
+    <string name="char_counter">%1$d / %2$d</string>
+    <string name="action_check">Angalia</string> <!-- TODO(review-sw) -->
+    <string name="action_clear">Futa</string> <!-- TODO(review-sw) -->
+    <string name="skip_title">Epuka kunakili na kubandika</string> <!-- TODO(review-sw) -->
+    <string name="skip_body">Kwenye WhatsApp, X au Telegram, gusa Share kwenye ujumbe na uchague programu hii. Utapata jibu bila kuondoka kwenye gumzo.</string> <!-- TODO(review-sw) -->
+    <string name="icon_share_desc">Shiriki</string> <!-- TODO(review-sw) -->
+    <string name="language_detected">Lugha: %1$s</string> <!-- TODO(review-sw) -->
+    <string name="language_english">Kiingereza</string>
+    <string name="language_swahili">Kiswahili</string>
+    <string name="language_sheng">Sheng</string>
+    <string name="language_mixed">Mchanganyiko</string>
+    <string name="language_unknown">Haijulikani</string> <!-- TODO(review-sw) -->
+
+    <!-- Checking state -->
+    <string name="checking_title">Inaangalia…</string> <!-- TODO(review-sw) -->
+    <string name="checking_helper">Kawaida huchukua sekunde chache.</string> <!-- TODO(review-sw) -->
+    <string name="your_post_language">Chapisho lako · %1$s</string> <!-- TODO(review-sw) -->
+    <string name="step_read_post">Tunasoma chapisho</string> <!-- TODO(review-sw) -->
+    <string name="step_spot_claim">Tunatambua dai</string> <!-- TODO(review-sw) -->
+    <string name="step_search_sources">Tunatafuta vyanzo vya kuaminika</string> <!-- TODO(review-sw) -->
+    <string name="step_compare">Tunalinganisha tulichokipata</string> <!-- TODO(review-sw) -->
+    <string name="step_write_result">Tunaandika jibu lako</string> <!-- TODO(review-sw) -->
+    <string name="action_cancel">Ghairi</string>
+
+    <!-- Result screen -->
+    <string name="result_title">Jibu</string> <!-- TODO(review-sw) -->
+    <string name="verdict_eyebrow">HITIMISHO</string> <!-- TODO(review-sw) -->
+    <string name="verdict_likely_false">Inawezekana si kweli</string> <!-- TODO(review-sw) -->
+    <string name="verdict_unverified">Haijathibitishwa</string> <!-- TODO(review-sw) -->
+    <string name="verdict_likely_true">Inawezekana ni kweli</string> <!-- TODO(review-sw) -->
+    <string name="confidence_high">Uhakika mkubwa</string> <!-- TODO(review-sw) -->
+    <string name="confidence_medium">Uhakika wa kati</string> <!-- TODO(review-sw) -->
+    <string name="confidence_low">Uhakika mdogo</string> <!-- TODO(review-sw) -->
+    <string name="confidence_meter_desc">Uhakika %1$d kati ya 5</string> <!-- TODO(review-sw) -->
+    <string name="post_checked_label">Chapisho ulilochunguza · %1$s</string> <!-- TODO(review-sw) -->
+    <string name="why_we_think_so">Kwa nini tunafikiri hivi</string> <!-- TODO(review-sw) -->
+    <string name="what_we_found">Tulichokipata</string> <!-- TODO(review-sw) -->
+    <string name="what_you_can_do">Unachoweza kufanya</string> <!-- TODO(review-sw) -->
+    <string name="related_fact_checks">Uchunguzi unaohusiana</string> <!-- TODO(review-sw) -->
+    <string name="action_share_correction">Shiriki marekebisho</string> <!-- TODO(review-sw) -->
+    <string name="action_share_caution">Shiriki tahadhari</string> <!-- TODO(review-sw) -->
+    <string name="action_check_another">Angalia kingine</string> <!-- TODO(review-sw) -->
+    <string name="icon_back_desc">Rudi</string>
+    <string name="icon_open_source_desc">Fungua uchunguzi</string> <!-- TODO(review-sw) -->
+    <string name="icon_expand_post">Onyesha chapisho lote</string> <!-- TODO(review-sw) -->
+    <string name="icon_collapse_post">Kunja chapisho</string> <!-- TODO(review-sw) -->
+    <string name="result_disclaimer">Haya ni makadirio ya kiotomatiki, si ukaguzi wa ukweli. Thibitisha kwa chanzo kinachoaminika.</string> <!-- TODO(review-sw) -->
+    <string name="action_do_1">Tafuta habari hiyo hiyo kwenye chanzo rasmi cha taasisi inayotajwa.</string> <!-- TODO(review-sw) -->
+    <string name="action_do_2">Muulize aliyetuma alipata wapi habari hiyo.</string> <!-- TODO(review-sw) -->
+    <string name="action_do_3">Angalia tena baadaye. Tutapata zaidi kadri habari zinavyotoka.</string> <!-- TODO(review-sw) -->
+
+    <!-- History -->
+    <string name="history_title">Historia</string> <!-- TODO(review-sw) -->
+    <string name="history_empty">Hakuna ukaguzi bado. Chapisho lolote utakalochunguza litaonekana hapa.</string> <!-- TODO(review-sw) -->
+    <string name="filter_all">Zote</string> <!-- TODO(review-sw) -->
+    <string name="filter_likely_false">Inawezekana si kweli</string> <!-- TODO(review-sw) -->
+    <string name="filter_unverified">Haijathibitishwa</string> <!-- TODO(review-sw) -->
+    <string name="filter_likely_true">Inawezekana ni kweli</string> <!-- TODO(review-sw) -->
+    <string name="group_today">Leo</string>
+    <string name="group_yesterday">Jana</string>
+    <string name="group_earlier">Mapema zaidi</string> <!-- TODO(review-sw) -->
+    <string name="relative_yesterday">Jana</string>
+    <string name="action_delete">Ondoa</string> <!-- TODO(review-sw) -->
+    <string name="check_deleted">Ukaguzi umeondolewa</string> <!-- TODO(review-sw) -->
+    <string name="action_undo">Tendua</string> <!-- TODO(review-sw) -->
+    <string name="icon_clear_history_desc">Futa historia</string> <!-- TODO(review-sw) -->
+    <string name="icon_open_check_desc">Fungua ukaguzi</string> <!-- TODO(review-sw) -->
+    <string name="action_recheck">Angalia tena</string> <!-- TODO(review-sw) -->
+    <string name="clear_history_title">Futa historia?</string> <!-- TODO(review-sw) -->
+    <string name="clear_history_message">Hii itaondoa ukaguzi wote uliohifadhiwa na haiwezi kurejeshwa.</string> <!-- TODO(review-sw) -->
+    <string name="action_clear_history">Futa historia</string> <!-- TODO(review-sw) -->
+
+    <!-- Errors -->
+    <string name="error_offline_title">Huna mtandao</string> <!-- TODO(review-sw) -->
+    <string name="error_offline_body">Unganisha na mtandao kisha ujaribu tena.</string> <!-- TODO(review-sw) -->
+    <string name="error_timeout_title">Inachukua muda mrefu</string> <!-- TODO(review-sw) -->
+    <string name="error_timeout_body">Ukaguzi ulichukua zaidi ya sekunde %1$d. Jaribu tena.</string> <!-- TODO(review-sw) -->
+    <string name="error_server_title">Kuna hitilafu</string> <!-- TODO(review-sw) -->
+    <string name="error_server_body">Ukaguzi haukukamilika. Tafadhali jaribu tena.</string> <!-- TODO(review-sw) -->
+    <string name="error_empty_text">Bandika au andika chapisho kwanza.</string> <!-- TODO(review-sw) -->
+    <string name="error_too_long_title">Chapisho ni refu mno</string> <!-- TODO(review-sw) -->
+    <string name="error_too_long_body">Weka chini ya herufi %1$d kisha ujaribu tena.</string> <!-- TODO(review-sw) -->
+    <string name="action_retry">Jaribu tena</string> <!-- TODO(review-sw) -->
+
+    <!-- Settings -->
+    <string name="settings_title">Mipangilio</string> <!-- TODO(review-sw) -->
+    <string name="icon_settings_desc">Mipangilio</string> <!-- TODO(review-sw) -->
+    <string name="settings_theme">Mandhari</string> <!-- TODO(review-sw) -->
+    <string name="theme_system">Mfumo</string> <!-- TODO(review-sw) -->
+    <string name="theme_light">Nuru</string> <!-- TODO(review-sw) -->
+    <string name="theme_dark">Giza</string> <!-- TODO(review-sw) -->
+    <string name="settings_language">Lugha ya programu</string> <!-- TODO(review-sw) -->
+    <string name="option_english">English</string>
+    <string name="option_kiswahili">Kiswahili</string>
+    <string name="settings_clear_history">Futa historia</string> <!-- TODO(review-sw) -->
+    <string name="settings_privacy">Faragha</string> <!-- TODO(review-sw) -->
+    <string name="settings_privacy_note">Chapisho lolote unalochunguza hutumwa kwenye seva yetu kwa uchambuzi.</string> <!-- TODO(review-sw) -->
+    <string name="settings_about">Kuhusu</string> <!-- TODO(review-sw) -->
+    <string name="settings_version">Toleo %1$s</string> <!-- TODO(review-sw) -->
+    <string name="about_dialog_title">Kuhusu programu hii</string> <!-- TODO(review-sw) -->
+    <string name="about_dialog_body">Fake News Detector hukupa makadirio ya haraka ya kiotomatiki kwa ujumbe uliosambazwa kwa Kiingereza, Kiswahili au Sheng. Haichukui nafasi ya wahakiki wa ukweli waliobobea.</string> <!-- TODO(review-sw) -->
+    <string name="action_close">Funga</string> <!-- TODO(review-sw) -->
+
+    <!-- Onboarding -->
+    <string name="onboarding_title">Angalia kabla ya kusambaza</string> <!-- TODO(review-sw) -->
+    <string name="onboarding_body">Tutumie ujumbe uliosambazwa upate jibu kwa lugha rahisi ndani ya sekunde chache.</string> <!-- TODO(review-sw) -->
+    <string name="onboarding_point_share">Gusa Share kwenye WhatsApp, X au Telegram na uchague programu hii upate jibu bila kuondoka kwenye gumzo.</string> <!-- TODO(review-sw) -->
+    <string name="onboarding_point_history">Kila ukaguzi huhifadhiwa ili uweze kuuangalia tena baadaye.</string> <!-- TODO(review-sw) -->
+    <string name="onboarding_point_language">Inafanya kazi kwa Kiingereza, Kiswahili na Sheng.</string> <!-- TODO(review-sw) -->
+    <string name="action_skip">Ruka</string> <!-- TODO(review-sw) -->
+    <string name="action_get_started">Anza</string> <!-- TODO(review-sw) -->
+
+    <!-- Quick check sheet -->
+    <string name="share_from_source">Imetumwa kutoka %1$s</string> <!-- TODO(review-sw) -->
+    <string name="share_from_unknown">Imetumwa kutoka programu nyingine</string> <!-- TODO(review-sw) -->
+    <string name="action_see_full_result">Ona jibu kamili</string> <!-- TODO(review-sw) -->
+    <string name="action_dismiss">Funga</string> <!-- TODO(review-sw) -->
+    <string name="result_not_found">Ukaguzi huo haupo tena.</string> <!-- TODO(review-sw) -->
+
+    <!-- Correction message (share sheet) -->
+    <string name="correction_verdict_false">Ujumbe huu una uwezekano mkubwa wa kuwa si wa kweli</string> <!-- TODO(review-sw) -->
+    <string name="correction_verdict_unverified">Tafadhali usisambaze bado — sikuweza kuthibitisha huu ujumbe</string> <!-- TODO(review-sw) -->
+    <string name="correction_verdict_true">Ujumbe huu unaonekana kuwa wa kweli</string> <!-- TODO(review-sw) -->
+    <string name="correction_message">%1$s. %2$s</string>
+</resources>
